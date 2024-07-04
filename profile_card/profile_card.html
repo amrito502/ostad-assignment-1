@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile-Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- =========start styles========= -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        box-sizing: border-box;
+      }
+
+      .profile_section {
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 100vh;
+      }
+
+      .wrapper {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .main_profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .profile {
+        width: 450px;
+        height: auto;
+        box-shadow: 0px 0px 100px 20px rgb(230, 227, 227);
+        padding: 20px;
+        border-radius: 20px;
+      }
+
+      .profile_picture {
+        display: flex;
+        justify-content: center;
+      }
+
+      .avatar {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        border: 4px solid #3a3939;
+      }
+
+      .profile_name_pro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      .user_name {
+        font-size: 37px;
+        font-weight: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #0a0a0a;
+      }
+
+      .user_profession {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 6px;
+        color: #0c0c0c;
+      }
+
+      .contact {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .phone {
+        color: #111111;
+      }
+
+      .email {
+        color: #111111;
+      }
+
+      .profile_desc {
+        margin-bottom: 20px;
+      }
+
+      .profile_desc > p {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5em;
+        letter-spacing: 0.3px;
+        word-spacing: 0.5px;
+        color: #111111;
+      }
+
+      .profile_count {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        color: #111111;
+      }
+
+      .count_pro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .count_pro > h6 {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .count_pro > p {
+        margin-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .profile_btn {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .follow_btn {
+        text-decoration: none;
+        font-size: 17px;
+        background-color: #fff;
+        color: #000000;
+        padding: 10px 20px;
+        border-radius: 6px;
+        border: 1px solid #000;
+        box-shadow: 1px 1px 10px 1px gray;
+      }
+
+      .hire_me_btn {
+        text-decoration: none;
+        font-size: 17px;
+        background-color: #0d0d0e;
+        color: #e7d3d3;
+        padding: 10px 20px;
+        border-radius: 6px;
+        box-shadow: 1px 1px 10px 1px gray;
+      }
+    </style>
+    <!-- =========end styles========= -->
+  </head>
+  <body>
+    <section class="profile_section">
+      <div class="wrapper">
+        <div class="main_profile">
+          <!-- profile -->
+          <div class="profile">
+            <!-- profile-picture -->
+            <div class="profile_picture">
+              <img class="avatar" src="amrito.jpg" alt="img" />
+            </div>
+            <!-- user-name-pro -->
+            <div class="profile_name_pro">
+              <h2 class="user_name">Amrito Bosu</h2>
+              <h4 class="user_profession">Web Developer</h4>
+            </div>
+            <div class="contact">
+              <p class="phone">
+                <i class="fa-solid fa-phone"></i> <span>+880 1835-873985</span>
+              </p>
+              <p class="email">
+                <i class="fa-solid fa-envelope"> </i>
+                <span>amritobosu@gmail.com</span>
+              </p>
+            </div>
+            <!-- profile-desc -->
+            <div class="profile_desc">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
+                eum reprehenderit aliquam consequuntur deleniti aliquid sunt!
+                Minima debitis similique, deserunt impedit ratione, incidunt
+                numquam enim molestiae, quia esse placeat nam?
+              </p>
+            </div>
+            <!-- profile-count -->
+            <div class="profile_count">
+              <div class="projects count_pro">
+                <h6>Projects</h6>
+                <p>235</p>
+              </div>
+              <div class="following count_pro">
+                <h6>Following</h6>
+                <p>1K</p>
+              </div>
+              <div class="followers count_pro">
+                <h6>Followers</h6>
+                <p>8M</p>
+              </div>
+            </div>
+            <!-- profile-btn -->
+            <div class="profile_btn">
+              <a href="" class="follow_btn">Follow</a>
+              <a href="" class="hire_me_btn">Hire Me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+      integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
